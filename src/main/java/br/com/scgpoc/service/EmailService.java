@@ -36,7 +36,7 @@ public class EmailService {
 		Context context = new Context();
 		context.setVariable("name", "tiago");
 		context.setVariable("location", "JF");
-		context.setVariable("signature", "STEFANINI");
+		context.setVariable("signature", "tiago");
 		context.setVariable("clientes", this.clienteRepository.buscarAniversariantes());
 		String html = templateEngine.process("email-template", context);
 
